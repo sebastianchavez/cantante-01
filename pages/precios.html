@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios - Lucas Vega | Paquetes y Tarifas</title>
+    <meta name="description" content="Conocé los paquetes y precios para contratar a Lucas Vega en tu evento. Opciones Esencial, Premium y VIP.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'gold': { '300': '#F4C430', '500': '#D4AF37' }, 'dark': { '900': '#0A0A0A', '800': '#1A1A1A', '700': '#2A2A2A' } }, fontFamily: { 'display': ['Playfair Display', 'serif'], 'body': ['Inter', 'sans-serif'] } } } }
+    </script>
+</head>
+<body class="bg-dark-900 text-white font-body">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="../index.html" class="flex items-center space-x-2">
+                    <i class="fa-solid fa-microphone-lines text-gold-500 text-2xl"></i>
+                    <span class="font-display font-bold text-2xl tracking-wider">LUCAS <span class="text-gold-500">VEGA</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Inicio</a>
+                    <a href="sobre-nosotros.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Sobre Nosotros</a>
+                    <a href="servicios.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Servicios</a>
+                    <a href="galeria.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Galería</a>
+                    <a href="precios.html" class="nav-link active px-4 py-2 text-sm font-medium hover:text-gold-500">Precios</a>
+                    <a href="contacto.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Contacto</a>
+                    <a href="contacto.html" class="ml-4 px-5 py-2.5 bg-gold-500 text-dark-900 font-semibold rounded-full hover:bg-gold-300 transition-all hover:scale-105">Contratar</a>
+                </div>
+                <button id="menu-btn" class="md:hidden p-2 text-white"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-800/98 backdrop-blur-lg border-t border-gold-500/20">
+            <div class="px-4 py-6 space-y-2">
+                <a href="../index.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Inicio</a>
+                <a href="sobre-nosotros.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Sobre Nosotros</a>
+                <a href="servicios.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Servicios</a>
+                <a href="galeria.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Galería</a>
+                <a href="precios.html" class="block px-4 py-3 rounded-lg bg-gold-500/10 text-gold-500">Precios</a>
+                <a href="contacto.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="relative pt-40 pb-12 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gold-700/10 to-transparent"></div>
+        <div class="max-w-5xl mx-auto px-4 text-center relative">
+            <span class="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest text-gold-500 border border-gold-500/40 rounded-full uppercase">Inversión</span>
+            <h1 class="font-display font-black text-5xl md:text-6xl mb-4">Nuestros <span class="text-gold-500">Precios</span></h1>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto">Paquetes diseñados para cada tipo de evento. Todos incluyen equipo profesional y sonido de primer nivel.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-3 gap-8 items-start">
+            <!-- Plan Esencial -->
+            <div class="reveal bg-dark-800 rounded-2xl p-8 border border-gold-500/10 hover:border-gold-500/40 transition-all">
+                <div class="text-center mb-6">
+                    <span class="text-gold-500 uppercase tracking-wider text-sm font-semibold">Esencial</span>
+                    <div class="mt-4">
+                        <span class="text-5xl font-display font-bold">$800</span>
+                        <span class="text-gray-400 text-sm block">por show</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-center mb-6 text-sm">Ideal para reuniones íntimas y acústicos.</p>
+                <ul class="space-y-3 mb-8 text-gray-300">
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Set acústico de 60 min</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Voz + guitarra</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Equipo de sonido básico</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Hasta 50 invitados</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>1 reunión previa</li>
+                    <li class="text-gray-600"><i class="fa-solid fa-xmark mr-2"></i>Banda completa</li>
+                    <li class="text-gray-600"><i class="fa-solid fa-xmark mr-2"></i>Iluminación profesional</li>
+                </ul>
+                <a href="contacto.html" class="block text-center px-6 py-3 border-2 border-gold-500 text-gold-500 font-bold rounded-full hover:bg-gold-500 hover:text-dark-900 transition-all">Contratar</a>
+            </div>
+
+            <!-- Plan Premium (Featured) -->
+            <div class="reveal pricing-featured rounded-2xl p-8 shadow-2xl shadow-gold-500/30" style="transition-delay: 0.1s;">
+                <div class="text-center mb-6">
+                    <span class="bg-dark-900 text-gold-500 uppercase tracking-wider text-xs font-bold px-3 py-1 rounded-full">Más Popular</span>
+                    <div class="mt-4 text-dark-900">
+                        <span class="text-5xl font-display font-bold">$1.500</span>
+                        <span class="text-dark-900/70 text-sm block">por show</span>
+                    </div>
+                </div>
+                <p class="text-dark-900/80 text-center mb-6 text-sm font-medium">El más elegido para bodas y eventos medianos.</p>
+                <ul class="space-y-3 mb-8 text-dark-900">
+                    <li><i class="fa-solid fa-check mr-2"></i>Set completo de 90 min</li>
+                    <li><i class="fa-solid fa-check mr-2"></i>Banda completa (4 músicos)</li>
+                    <li><i class="fa-solid fa-check mr-2"></i>Sonido profesional premium</li>
+                    <li><i class="fa-solid fa-check mr-2"></i>Hasta 200 invitados</li>
+                    <li><i class="fa-solid fa-check mr-2"></i>3 reuniones previas</li>
+                    <li><i class="fa-solid fa-check mr-2"></i>Iluminación de escenario</li>
+                    <li><i class="fa-solid fa-check mr-2"></i>DJ posterior al show</li>
+                </ul>
+                <a href="contacto.html" class="block text-center px-6 py-3 bg-dark-900 text-gold-500 font-bold rounded-full hover:bg-dark-800 transition-all">Contratar Ahora</a>
+            </div>
+
+            <!-- Plan VIP -->
+            <div class="reveal bg-dark-800 rounded-2xl p-8 border border-gold-500/10 hover:border-gold-500/40 transition-all" style="transition-delay: 0.2s;">
+                <div class="text-center mb-6">
+                    <span class="text-gold-500 uppercase tracking-wider text-sm font-semibold">VIP</span>
+                    <div class="mt-4">
+                        <span class="text-5xl font-display font-bold">$3.000</span>
+                        <span class="text-gray-400 text-sm block">+ desde</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-center mb-6 text-sm">Para grandes producciones y eventos corporativos.</p>
+                <ul class="space-y-3 mb-8 text-gray-300">
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Show de 2 a 3 horas</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Banda + bailarines + coros</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Producción audiovisual completa</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Invitados ilimitados</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Reuniones ilimitadas</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Producción técnica dedicada</li>
+                    <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Transporte y hotelería</li>
+                </ul>
+                <a href="contacto.html" class="block text-center px-6 py-3 border-2 border-gold-500 text-gold-500 font-bold rounded-full hover:bg-gold-500 hover:text-dark-900 transition-all">Consultar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-12 bg-dark-800">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="font-display font-bold text-3xl text-center mb-10 reveal">Comparación <span class="text-gold-500">Detallada</span></h2>
+            <div class="overflow-x-auto reveal">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-dark-900">
+                            <th class="text-left p-4 font-semibold text-gold-500">Característica</th>
+                            <th class="p-4 font-semibold">Esencial</th>
+                            <th class="p-4 font-semibold bg-gold-500/10 text-gold-500">Premium</th>
+                            <th class="p-4 font-semibold">VIP</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center text-gray-300">
+                        <tr class="border-t border-dark-700"><td class="text-left p-4">Duración</td><td class="p-4">60 min</td><td class="p-4 bg-gold-500/5 font-semibold">90 min</td><td class="p-4">120+ min</td></tr>
+                        <tr class="border-t border-dark-700"><td class="text-left p-4">Cantidad de músicos</td><td class="p-4">1</td><td class="p-4 bg-gold-500/5 font-semibold">4</td><td class="p-4">8+</td></tr>
+                        <tr class="border-t border-dark-700"><td class="text-left p-4">Equipamiento</td><td class="p-4">Básico</td><td class="p-4 bg-gold-500/5 font-semibold">Profesional</td><td class="p-4">Producción Full</td></tr>
+                        <tr class="border-t border-dark-700"><td class="text-left p-4">Cantidad de invitados</td><td class="p-4">Hasta 50</td><td class="p-4 bg-gold-500/5 font-semibold">Hasta 200</td><td class="p-4">Ilimitado</td></tr>
+                        <tr class="border-t border-dark-700"><td class="text-left p-4">Reuniones previas</td><td class="p-4">1</td><td class="p-4 bg-gold-500/5 font-semibold">3</td><td class="p-4">Ilimitadas</td></tr>
+                        <tr class="border-t border-dark-700"><td class="text-left p-4">Iluminación</td><td class="p-4"><i class="fa-solid fa-xmark text-red-500"></i></td><td class="p-4 bg-gold-500/5"><i class="fa-solid fa-check text-gold-500"></i></td><td class="p-4"><i class="fa-solid fa-check text-gold-500"></i></td></tr>
+                        <tr class="border-t border-dark-700"><td class="text-left p-4">DJ posterior</td><td class="p-4"><i class="fa-solid fa-xmark text-red-500"></i></td><td class="p-4 bg-gold-500/5"><i class="fa-solid fa-check text-gold-500"></i></td><td class="p-4"><i class="fa-solid fa-check text-gold-500"></i></td></tr>
+                        <tr class="border-t border-dark-700"><td class="text-left p-4">Transporte</td><td class="p-4">No incluido</td><td class="p-4 bg-gold-500/5">No incluido</td><td class="p-4">Incluido</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="font-display font-bold text-3xl md:text-4xl text-center mb-10 reveal">Preguntas <span class="text-gold-500">Frecuentes</span></h2>
+            <div class="space-y-4 reveal">
+                <details class="bg-dark-800 rounded-xl border border-gold-500/10 group">
+                    <summary class="cursor-pointer p-5 font-semibold flex justify-between items-center">
+                        <span>¿Qué incluyen los precios?</span>
+                        <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform text-gold-500"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-gray-400">Todos los paquetes incluyen el show del artista, equipo de sonido, traslado local y seguro de responsabilidad civil. Los paquetes Premium y VIP incluyen además iluminación profesional y servicios adicionales según corresponda.</div>
+                </details>
+                <details class="bg-dark-800 rounded-xl border border-gold-500/10 group">
+                    <summary class="cursor-pointer p-5 font-semibold flex justify-between items-center">
+                        <span>¿Cómo se realiza el pago?</span>
+                        <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform text-gold-500"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-gray-400">Se requiere una seña del 50% para reservar la fecha, y el 50% restante se abona una semana antes del evento. Aceptamos transferencia bancaria, MercadoPago y PayPal.</div>
+                </details>
+                <details class="bg-dark-800 rounded-xl border border-gold-500/10 group">
+                    <summary class="cursor-pointer p-5 font-semibold flex justify-between items-center">
+                        <span>¿Puedo cancelar la reserva?</span>
+                        <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform text-gold-500"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-gray-400">Sí. Cancelaciones con más de 60 días de anticipación tienen devolución del 100% de la seña. Entre 30 y 60 días: 50%. Menos de 30 días: sin devolución, pero podés reprogramar la fecha sin cargo.</div>
+                </details>
+                <details class="bg-dark-800 rounded-xl border border-gold-500/10 group">
+                    <summary class="cursor-pointer p-5 font-semibold flex justify-between items-center">
+                        <span>¿Hacen shows en el exterior?</span>
+                        <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform text-gold-500"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-gray-400">Sí, Lucas se presenta regularmente en toda Latinoamérica, USA y Europa. Los costos de transporte, hotelería y logística internacional se cotizan aparte según el destino.</div>
+                </details>
+                <details class="bg-dark-800 rounded-xl border border-gold-500/10 group">
+                    <summary class="cursor-pointer p-5 font-semibold flex justify-between items-center">
+                        <span>¿Puedo pedir canciones específicas?</span>
+                        <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform text-gold-500"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-gray-400">Por supuesto. En las reuniones previas vamos a armar juntos el setlist ideal. Lucas tiene un repertorio de más de 200 canciones y también puede aprender nuevas versiones especialmente para tu evento.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-gold-700 via-gold-500 to-gold-300"></div>
+        <div class="absolute inset-0 bg-dark-900/80"></div>
+        <div class="relative max-w-4xl mx-auto px-4 text-center reveal">
+            <h2 class="font-display font-bold text-4xl md:text-5xl mb-4">¿Listo para contratar?</h2>
+            <p class="text-xl text-gray-300 mb-8">Cuéntanos tu idea y armemos una propuesta a medida.</p>
+            <a href="contacto.html" class="inline-block px-10 py-4 bg-gold-500 text-dark-900 font-bold rounded-full hover:bg-gold-300 transition-all hover:scale-105 shadow-2xl">
+                Solicitar cotización <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-gold-500/20 pt-16 pb-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa-solid fa-microphone-lines text-gold-500 text-2xl"></i>
+                        <span class="font-display font-bold text-2xl">LUCAS <span class="text-gold-500">VEGA</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">Cantante de pop latino dedicado a crear experiencias musicales únicas.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gold-500 mb-4 uppercase text-sm tracking-wider">Navegación</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-gold-500">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html" class="hover:text-gold-500">Sobre Nosotros</a></li>
+                        <li><a href="servicios.html" class="hover:text-gold-500">Servicios</a></li>
+                        <li><a href="galeria.html" class="hover:text-gold-500">Galería</a></li>
+                        <li><a href="precios.html" class="hover:text-gold-500">Precios</a></li>
+                        <li><a href="contacto.html" class="hover:text-gold-500">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gold-500 mb-4 uppercase text-sm tracking-wider">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="politicas.html" class="hover:text-gold-500">Políticas</a></li>
+                        <li><a href="terminos.html" class="hover:text-gold-500">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 Lucas Vega. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="scroll-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-dark-900 rounded-full shadow-lg opacity-0 pointer-events-none z-40"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>

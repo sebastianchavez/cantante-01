@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Privacidad - Lucas Vega</title>
+    <meta name="description" content="Conoce nuestras políticas de privacidad. Cómo recopilamos, usamos y protegemos tu información personal.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'gold': { '300': '#F4C430', '500': '#D4AF37' }, 'dark': { '900': '#0A0A0A', '800': '#1A1A1A', '700': '#2A2A2A' } }, fontFamily: { 'display': ['Playfair Display', 'serif'], 'body': ['Inter', 'sans-serif'] } } } }
+    </script>
+</head>
+<body class="bg-dark-900 text-white font-body">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="../index.html" class="flex items-center space-x-2">
+                    <i class="fa-solid fa-microphone-lines text-gold-500 text-2xl"></i>
+                    <span class="font-display font-bold text-2xl tracking-wider">LUCAS <span class="text-gold-500">VEGA</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Inicio</a>
+                    <a href="sobre-nosotros.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Sobre Nosotros</a>
+                    <a href="servicios.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Servicios</a>
+                    <a href="galeria.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Galería</a>
+                    <a href="precios.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Precios</a>
+                    <a href="contacto.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Contacto</a>
+                    <a href="contacto.html" class="ml-4 px-5 py-2.5 bg-gold-500 text-dark-900 font-semibold rounded-full hover:bg-gold-300 transition-all hover:scale-105">Contratar</a>
+                </div>
+                <button id="menu-btn" class="md:hidden p-2 text-white"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-800/98 backdrop-blur-lg border-t border-gold-500/20">
+            <div class="px-4 py-6 space-y-2">
+                <a href="../index.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Inicio</a>
+                <a href="sobre-nosotros.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Sobre Nosotros</a>
+                <a href="servicios.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Servicios</a>
+                <a href="galeria.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Galería</a>
+                <a href="precios.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Precios</a>
+                <a href="contacto.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="relative pt-40 pb-16 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gold-700/10 to-transparent"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative">
+            <span class="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest text-gold-500 border border-gold-500/40 rounded-full uppercase">Legal</span>
+            <h1 class="font-display font-black text-5xl md:text-6xl mb-4">Políticas de <span class="text-gold-500">Privacidad</span></h1>
+            <p class="text-gray-400">Última actualización: 10 de octubre de 2025</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="pb-20">
+        <div class="max-w-4xl mx-auto px-4 prose prose-invert prose-lg">
+            <div class="bg-dark-800 rounded-2xl p-8 md:p-12 border border-gold-500/10 space-y-8">
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-gold-500 mb-3">1. Información que Recopilamos</h2>
+                    <p class="text-gray-300 leading-relaxed">En Lucas Vega, recopilamos los siguientes tipos de información personal cuando utilizás nuestros servicios o te contactás con nosotros:</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 mt-3 ml-2">
+                        <li>Nombre completo y datos de contacto (email, teléfono)</li>
+                        <li>Información del evento (fecha, lugar, tipo de evento, cantidad de invitados)</li>
+                        <li>Información de pago (procesada a través de plataformas seguras)</li>
+                        <li>Preferencias musicales y comentarios sobre tu evento</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-gold-500 mb-3">2. Uso de la Información</h2>
+                    <p class="text-gray-300 leading-relaxed">Utilizamos tu información personal exclusivamente para:</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 mt-3 ml-2">
+                        <li>Procesar consultas y solicitudes de contratación</li>
+                        <li>Coordinar los shows y la logística asociada</li>
+                        <li>Emitir cotizaciones y facturas</li>
+                        <li>Enviar comunicaciones relacionadas con tu reserva</li>
+                        <li>Mejorar nuestros servicios y la experiencia del cliente</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-gold-500 mb-3">3. Protección de Datos</h2>
+                    <p class="text-gray-300 leading-relaxed">Implementamos medidas de seguridad técnicas y organizativas para proteger tu información personal contra acceso no autorizado, pérdida, destrucción o divulgación. Todos los datos son almacenados en servidores seguros y solo el personal autorizado tiene acceso a ellos.</p>
+                </div>
+
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-gold-500 mb-3">4. Compartir Información con Terceros</h2>
+                    <p class="text-gray-300 leading-relaxed">No vendemos, alquilamos ni compartimos tu información personal con terceros, salvo en los siguientes casos:</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 mt-3 ml-2">
+                        <li>Proveedores de servicios de pago (para procesar transacciones)</li>
+                        <li>Proveedores técnicos del sonido e iluminación (solo datos necesarios para el evento)</li>
+                        <li>Cuando sea requerido por ley o autoridad competente</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-gold-500 mb-3">5. Cookies y Tecnologías Similares</h2>
+                    <p class="text-gray-300 leading-relaxed">Nuestro sitio web utiliza cookies y tecnologías similares para mejorar tu experiencia de navegación, analizar el tráfico y personalizar el contenido. Podés configurar tu navegador para rechazar todas las cookies, aunque esto puede afectar el funcionamiento del sitio.</p>
+                </div>
+
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-gold-500 mb-3">6. Tus Derechos</h2>
+                    <p class="text-gray-300 leading-relaxed">Tenés los siguientes derechos sobre tu información personal:</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 mt-3 ml-2">
+                        <li><strong>Acceso:</strong> solicitar una copia de los datos que tenemos sobre vos</li>
+                        <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos</li>
+                        <li><strong>Eliminación:</strong> solicitar la eliminación de tus datos</li>
+                        <li><strong>Oposición:</strong> oponerte al procesamiento de tus datos</li>
+                        <li><strong>Portabilidad:</strong> recibir tus datos en formato estructurado</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-gold-500 mb-3">7. Retención de Datos</h2>
+                    <p class="text-gray-300 leading-relaxed">Conservamos tu información personal durante el tiempo necesario para cumplir con los fines descritos en esta política, a menos que la ley requiera o permita un período de retención más largo.</p>
+                </div>
+
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-gold-500 mb-3">8. Cambios a esta Política</h2>
+                    <p class="text-gray-300 leading-relaxed">Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Cualquier cambio será publicado en esta página con la fecha de actualización correspondiente. Te recomendamos revisarla periódicamente.</p>
+                </div>
+
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-gold-500 mb-3">9. Contacto</h2>
+                    <p class="text-gray-300 leading-relaxed">Si tenés preguntas sobre esta política de privacidad o querés ejercer tus derechos, podés contactarnos a través de:</p>
+                    <ul class="text-gray-300 space-y-1 mt-3">
+                        <li><i class="fa-solid fa-envelope text-gold-500 mr-2"></i>privacidad@lucasvega.com</li>
+                        <li><i class="fa-solid fa-phone text-gold-500 mr-2"></i>+54 11 5555-1234</li>
+                        <li><i class="fa-solid fa-location-dot text-gold-500 mr-2"></i>Av. Corrientes 1234, Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-gold-500/20 pt-16 pb-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa-solid fa-microphone-lines text-gold-500 text-2xl"></i>
+                        <span class="font-display font-bold text-2xl">LUCAS <span class="text-gold-500">VEGA</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">Cantante de pop latino dedicado a crear experiencias musicales únicas.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gold-500 mb-4 uppercase text-sm tracking-wider">Navegación</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-gold-500">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html" class="hover:text-gold-500">Sobre Nosotros</a></li>
+                        <li><a href="servicios.html" class="hover:text-gold-500">Servicios</a></li>
+                        <li><a href="galeria.html" class="hover:text-gold-500">Galería</a></li>
+                        <li><a href="precios.html" class="hover:text-gold-500">Precios</a></li>
+                        <li><a href="contacto.html" class="hover:text-gold-500">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gold-500 mb-4 uppercase text-sm tracking-wider">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="politicas.html" class="hover:text-gold-500">Políticas</a></li>
+                        <li><a href="terminos.html" class="hover:text-gold-500">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 Lucas Vega. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="scroll-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-dark-900 rounded-full shadow-lg opacity-0 pointer-events-none z-40"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>

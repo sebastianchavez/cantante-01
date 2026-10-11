@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Lucas Vega | Trayectoria Musical</title>
+    <meta name="description" content="Conoce la historia de Lucas Vega, cantante de pop latino con más de 10 años de carrera internacional.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'gold': { '50': '#FFF9E5', '100': '#FFF0B3', '300': '#F4C430', '400': '#E0B020', '500': '#D4AF37', '600': '#B8941F', '700': '#8A6F18' }, 'dark': { '900': '#0A0A0A', '800': '#1A1A1A', '700': '#2A2A2A' } }, fontFamily: { 'display': ['Playfair Display', 'serif'], 'body': ['Inter', 'sans-serif'] } } } }
+    </script>
+</head>
+<body class="bg-dark-900 text-white font-body">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="../index.html" class="flex items-center space-x-2">
+                    <i class="fa-solid fa-microphone-lines text-gold-500 text-2xl"></i>
+                    <span class="font-display font-bold text-2xl tracking-wider">LUCAS <span class="text-gold-500">VEGA</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500 transition-colors">Inicio</a>
+                    <a href="sobre-nosotros.html" class="nav-link active px-4 py-2 text-sm font-medium hover:text-gold-500 transition-colors">Sobre Nosotros</a>
+                    <a href="servicios.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500 transition-colors">Servicios</a>
+                    <a href="galeria.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500 transition-colors">Galería</a>
+                    <a href="precios.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500 transition-colors">Precios</a>
+                    <a href="contacto.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500 transition-colors">Contacto</a>
+                    <a href="contacto.html" class="ml-4 px-5 py-2.5 bg-gold-500 text-dark-900 font-semibold rounded-full hover:bg-gold-300 transition-all hover:scale-105">Contratar</a>
+                </div>
+                <button id="menu-btn" class="md:hidden p-2 text-white hover:text-gold-500" aria-label="Abrir menú"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-800/98 backdrop-blur-lg border-t border-gold-500/20">
+            <div class="px-4 py-6 space-y-2">
+                <a href="../index.html" class="block px-4 py-3 text-base font-medium rounded-lg hover:bg-gold-500/10 hover:text-gold-500">Inicio</a>
+                <a href="sobre-nosotros.html" class="block px-4 py-3 text-base font-medium rounded-lg bg-gold-500/10 text-gold-500">Sobre Nosotros</a>
+                <a href="servicios.html" class="block px-4 py-3 text-base font-medium rounded-lg hover:bg-gold-500/10 hover:text-gold-500">Servicios</a>
+                <a href="galeria.html" class="block px-4 py-3 text-base font-medium rounded-lg hover:bg-gold-500/10 hover:text-gold-500">Galería</a>
+                <a href="precios.html" class="block px-4 py-3 text-base font-medium rounded-lg hover:bg-gold-500/10 hover:text-gold-500">Precios</a>
+                <a href="contacto.html" class="block px-4 py-3 text-base font-medium rounded-lg hover:bg-gold-500/10 hover:text-gold-500">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative pt-40 pb-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gold-700/10 to-transparent"></div>
+        <div class="max-w-5xl mx-auto px-4 text-center relative">
+            <span class="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest text-gold-500 border border-gold-500/40 rounded-full uppercase">Sobre Mí</span>
+            <h1 class="font-display font-black text-5xl md:text-6xl mb-4">Conoce a <span class="text-gold-500">Lucas Vega</span></h1>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto">Una década llevando música a los escenarios más importantes del mundo.</p>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal-left">
+                <img src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=800&q=80" alt="Lucas Vega" class="rounded-2xl shadow-2xl w-full">
+                <div class="mt-6 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=400&q=80" alt="Show en vivo" class="rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=400&q=80" alt="En el estudio" class="rounded-xl">
+                </div>
+            </div>
+            <div class="reveal-right">
+                <span class="text-gold-500 font-semibold uppercase text-sm tracking-wider">Mi Historia</span>
+                <h2 class="font-display font-bold text-4xl mt-3 mb-6">Pasión por la música desde los <span class="text-gold-500">15 años</span></h2>
+                <p class="text-gray-300 mb-4 leading-relaxed">Lucas Vega nació en Buenos Aires en 1992. Desde muy joven descubrió su pasión por la música, influenciado por artistas como Luis Miguel, Alejandro Sanz y Juanes. A los 15 años empezó a cantar en bares locales de su barrio.</p>
+                <p class="text-gray-300 mb-4 leading-relaxed">En 2015 lanzó su primer álbum "Latido" que alcanzó el Disco de Oro en Argentina y Chile. Su segundo álbum "Sin Fronteras" lo llevó de gira por Latinoamérica, Estados Unidos y Europa.</p>
+                <p class="text-gray-300 mb-6 leading-relaxed">Hoy, con tres álbumes en su haber y más de 450 shows en vivo, Lucas se consolida como uno de los artistas más versátiles y solicitados de la escena pop latina actual, cosechando fans en cada rincón del mundo.</p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-500 text-sm"><i class="fa-solid fa-music mr-2"></i>Pop Latino</span>
+                    <span class="px-4 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-500 text-sm"><i class="fa-solid fa-guitar mr-2"></i>Balada</span>
+                    <span class="px-4 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-500 text-sm"><i class="fa-solid fa-fire mr-2"></i>Reggaetón</span>
+                    <span class="px-4 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-500 text-sm"><i class="fa-solid fa-microphone mr-2"></i>Acústico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-20 bg-dark-800">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="text-gold-500 font-semibold uppercase text-sm tracking-wider">Trayectoria</span>
+                <h2 class="font-display font-bold text-4xl md:text-5xl mt-3">Línea de <span class="text-gold-500">Tiempo</span></h2>
+            </div>
+            <div class="space-y-12">
+                <div class="grid md:grid-cols-[200px_1fr] gap-6 reveal">
+                    <div class="text-gold-500 font-display font-bold text-3xl">2014</div>
+                    <div class="bg-dark-900 p-6 rounded-xl border border-gold-500/20">
+                        <h3 class="font-display font-bold text-xl mb-2">Inicio del Sueño</h3>
+                        <p class="text-gray-400">Lucas llega a Buenos Aires con su guitarra y empieza a tocar en bares de San Telmo. Sus primeras composiciones cautivan al público.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-[200px_1fr] gap-6 reveal" style="transition-delay: 0.1s;">
+                    <div class="text-gold-500 font-display font-bold text-3xl">2016</div>
+                    <div class="bg-dark-900 p-6 rounded-xl border border-gold-500/20">
+                        <h3 class="font-display font-bold text-xl mb-2">Primer Álbum "Latido"</h3>
+                        <p class="text-gray-400">Lanzamiento de su álbum debut. Disco de Oro en Argentina y Chile en menos de 6 meses.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-[200px_1fr] gap-6 reveal" style="transition-delay: 0.2s;">
+                    <div class="text-gold-500 font-display font-bold text-3xl">2019</div>
+                    <div class="bg-dark-900 p-6 rounded-xl border border-gold-500/20">
+                        <h3 class="font-display font-bold text-xl mb-2">Gira "Sin Fronteras"</h3>
+                        <p class="text-gray-400">Primera gira internacional que recorre 12 países de Latinoamérica y Europa. Más de 100 shows sold out.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-[200px_1fr] gap-6 reveal" style="transition-delay: 0.3s;">
+                    <div class="text-gold-500 font-display font-bold text-3xl">2022</div>
+                    <div class="bg-dark-900 p-6 rounded-xl border border-gold-500/20">
+                        <h3 class="font-display font-bold text-xl mb-2">Premio Latin Grammy</h3>
+                        <p class="text-gray-400">Nominación a "Mejor Nuevo Artista Latino". Consolidación internacional con shows en USA y Europa.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-[200px_1fr] gap-6 reveal" style="transition-delay: 0.4s;">
+                    <div class="text-gold-500 font-display font-bold text-3xl">2025</div>
+                    <div class="bg-dark-900 p-6 rounded-xl border border-gold-500/20">
+                        <h3 class="font-display font-bold text-xl mb-2">Nueva Era "Renacer"</h3>
+                        <p class="text-gray-400">Lanzamiento del tercer álbum y tour mundial. Más de 2 millones de oyentes mensuales en Spotify.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="text-gold-500 font-semibold uppercase text-sm tracking-wider">Mis Valores</span>
+                <h2 class="font-display font-bold text-4xl md:text-5xl mt-3">Lo que me <span class="text-gold-500">define</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="reveal bg-dark-800 p-8 rounded-2xl text-center border border-gold-500/10 hover:border-gold-500/50 transition-all">
+                    <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center bg-gold-500/10 rounded-full">
+                        <i class="fa-solid fa-heart text-gold-500 text-3xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl mb-3">Pasión</h3>
+                    <p class="text-gray-400">Cada nota, cada show, cada canción es entregada con el alma. La música es mi vida y eso se nota en el escenario.</p>
+                </div>
+                <div class="reveal bg-dark-800 p-8 rounded-2xl text-center border border-gold-500/10 hover:border-gold-500/50 transition-all" style="transition-delay: 0.1s;">
+                    <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center bg-gold-500/10 rounded-full">
+                        <i class="fa-solid fa-people-group text-gold-500 text-3xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl mb-3">Conexión</h3>
+                    <p class="text-gray-400">Más allá de cantar, busco conectar con cada persona del público. Hacer que se sientan parte del show.</p>
+                </div>
+                <div class="reveal bg-dark-800 p-8 rounded-2xl text-center border border-gold-500/10 hover:border-gold-500/50 transition-all" style="transition-delay: 0.2s;">
+                    <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center bg-gold-500/10 rounded-full">
+                        <i class="fa-solid fa-gem text-gold-500 text-3xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl mb-3">Calidad</h3>
+                    <p class="text-gray-400">Equipo profesional de primer nivel, sonido de estudio, iluminación de concierto. Solo lo mejor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-gold-500/20 pt-16 pb-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa-solid fa-microphone-lines text-gold-500 text-2xl"></i>
+                        <span class="font-display font-bold text-2xl">LUCAS <span class="text-gold-500">VEGA</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">Cantante de pop latino dedicado a crear experiencias musicales únicas.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gold-500 mb-4 uppercase text-sm tracking-wider">Navegación</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-gold-500">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html" class="hover:text-gold-500">Sobre Nosotros</a></li>
+                        <li><a href="servicios.html" class="hover:text-gold-500">Servicios</a></li>
+                        <li><a href="galeria.html" class="hover:text-gold-500">Galería</a></li>
+                        <li><a href="precios.html" class="hover:text-gold-500">Precios</a></li>
+                        <li><a href="contacto.html" class="hover:text-gold-500">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gold-500 mb-4 uppercase text-sm tracking-wider">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="politicas.html" class="hover:text-gold-500">Políticas</a></li>
+                        <li><a href="terminos.html" class="hover:text-gold-500">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 Lucas Vega. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="scroll-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-dark-900 rounded-full shadow-lg opacity-0 pointer-events-none z-40"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>

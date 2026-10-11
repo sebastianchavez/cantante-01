@@ -1,0 +1,225 @@
+/* ============================================
+   LUCAS VEGA - Custom Styles & Animations
+   ============================================ */
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #F4C430;
+}
+
+/* Selection */
+::selection {
+    background: #D4AF37;
+    color: #0A0A0A;
+}
+
+/* Navbar scroll state */
+#navbar.scrolled {
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Reveal animations on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Nav link active state */
+.nav-link.active {
+    color: #D4AF37;
+    position: relative;
+}
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 2px;
+    background: #D4AF37;
+    border-radius: 2px;
+}
+
+/* Ripple effect on buttons */
+.btn-ripple {
+    position: relative;
+    overflow: hidden;
+}
+.btn-ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+.btn-ripple:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Gallery hover zoom */
+.gallery-item {
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-item img {
+    transition: transform 0.6s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.gallery-item .overlay {
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.9), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Lightbox */
+#lightbox {
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease;
+}
+#lightbox-img {
+    max-height: 85vh;
+    max-width: 90vw;
+    animation: zoomIn 0.4s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Pricing card featured */
+.pricing-featured {
+    background: linear-gradient(135deg, #D4AF37, #F4C430);
+    transform: scale(1.05);
+    border: 2px solid #F4C430;
+}
+.pricing-featured .text-gray-400 {
+    color: rgba(10, 10, 10, 0.7) !important;
+}
+.pricing-featured h3,
+.pricing-featured .price {
+    color: #0A0A0A !important;
+}
+
+/* Form inputs */
+.form-input {
+    background: #1A1A1A;
+    border: 1px solid #2A2A2A;
+    color: white;
+    transition: all 0.3s ease;
+}
+.form-input:focus {
+    outline: none;
+    border-color: #D4AF37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+.form-input.error {
+    border-color: #ef4444;
+}
+.form-input.success {
+    border-color: #10b981;
+}
+
+/* Pulse animation */
+@keyframes pulse-gold {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+    50% { box-shadow: 0 0 0 20px rgba(212, 175, 55, 0); }
+}
+.pulse-gold {
+    animation: pulse-gold 2s infinite;
+}
+
+/* Glow text */
+.glow-text {
+    text-shadow: 0 0 40px rgba(212, 175, 55, 0.5);
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+    animation: slideDown 0.3s ease;
+}
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Line clamp utility */
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Backdrop blur for mobile menu */
+.bg-dark-800\/98 {
+    background-color: rgba(26, 26, 26, 0.98);
+}

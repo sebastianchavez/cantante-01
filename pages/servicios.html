@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Lucas Vega | Shows para Eventos</title>
+    <meta name="description" content="Shows en vivo para bodas, eventos corporativos, festivales y fiestas privadas. Repertorio personalizado y equipo profesional.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'gold': { '300': '#F4C430', '500': '#D4AF37' }, 'dark': { '900': '#0A0A0A', '800': '#1A1A1A', '700': '#2A2A2A' } }, fontFamily: { 'display': ['Playfair Display', 'serif'], 'body': ['Inter', 'sans-serif'] } } } }
+    </script>
+</head>
+<body class="bg-dark-900 text-white font-body">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="../index.html" class="flex items-center space-x-2">
+                    <i class="fa-solid fa-microphone-lines text-gold-500 text-2xl"></i>
+                    <span class="font-display font-bold text-2xl tracking-wider">LUCAS <span class="text-gold-500">VEGA</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Inicio</a>
+                    <a href="sobre-nosotros.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Sobre Nosotros</a>
+                    <a href="servicios.html" class="nav-link active px-4 py-2 text-sm font-medium hover:text-gold-500">Servicios</a>
+                    <a href="galeria.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Galería</a>
+                    <a href="precios.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Precios</a>
+                    <a href="contacto.html" class="nav-link px-4 py-2 text-sm font-medium hover:text-gold-500">Contacto</a>
+                    <a href="contacto.html" class="ml-4 px-5 py-2.5 bg-gold-500 text-dark-900 font-semibold rounded-full hover:bg-gold-300 transition-all hover:scale-105">Contratar</a>
+                </div>
+                <button id="menu-btn" class="md:hidden p-2 text-white"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-800/98 backdrop-blur-lg border-t border-gold-500/20">
+            <div class="px-4 py-6 space-y-2">
+                <a href="../index.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Inicio</a>
+                <a href="sobre-nosotros.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Sobre Nosotros</a>
+                <a href="servicios.html" class="block px-4 py-3 rounded-lg bg-gold-500/10 text-gold-500">Servicios</a>
+                <a href="galeria.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Galería</a>
+                <a href="precios.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Precios</a>
+                <a href="contacto.html" class="block px-4 py-3 rounded-lg hover:bg-gold-500/10">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="relative pt-40 pb-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gold-700/10 to-transparent"></div>
+        <div class="max-w-5xl mx-auto px-4 text-center relative">
+            <span class="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest text-gold-500 border border-gold-500/40 rounded-full uppercase">Servicios</span>
+            <h1 class="font-display font-black text-5xl md:text-6xl mb-4">Nuestros <span class="text-gold-500">Servicios</span></h1>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto">Soluciones musicales para cada tipo de evento. Personalización total y equipo profesional incluido.</p>
+        </div>
+    </section>
+
+    <!-- Services Detail -->
+    <section class="pb-20">
+        <div class="max-w-6xl mx-auto px-4 space-y-8">
+            <!-- Service 1 -->
+            <div class="reveal bg-dark-800 rounded-2xl overflow-hidden border border-gold-500/10 hover:border-gold-500/40 transition-all grid md:grid-cols-2">
+                <div class="bg-cover bg-center min-h-[300px]" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80');"></div>
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 flex items-center justify-center bg-gold-500/10 rounded-xl mr-4">
+                            <i class="fa-solid fa-ring text-gold-500 text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-3xl">Bodas</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Hacé que tu boda sea realmente única. Ya sea en la ceremonia, el cóctel o la fiesta, la música en vivo transforma cada momento en algo mágico.</p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Repertorio personalizado (incluye canciones románticas)</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Sets acústicos o banda completa</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Equipo de sonido profesional</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Prueba de sonido previa</li>
+                    </ul>
+                    <a href="contacto.html" class="self-start px-6 py-3 bg-gold-500 text-dark-900 font-bold rounded-full hover:bg-gold-300 transition-all">Consultar</a>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="reveal bg-dark-800 rounded-2xl overflow-hidden border border-gold-500/10 hover:border-gold-500/40 transition-all grid md:grid-cols-2" style="transition-delay: 0.1s;">
+                <div class="bg-cover bg-center min-h-[300px] md:order-2" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80');"></div>
+                <div class="p-8 md:p-12 flex flex-col justify-center md:order-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 flex items-center justify-center bg-gold-500/10 rounded-xl mr-4">
+                            <i class="fa-solid fa-briefcase text-gold-500 text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-3xl">Eventos Corporativos</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Lanzamientos de productos, fiestas de fin de año, convenciones. Shows que se adaptan a la imagen de tu empresa y dejan huella.</p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Repertorio adaptable a la marca</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Producción audiovisual completa</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Coordinación con organizador</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Opción bilingüe (español/inglés)</li>
+                    </ul>
+                    <a href="contacto.html" class="self-start px-6 py-3 bg-gold-500 text-dark-900 font-bold rounded-full hover:bg-gold-300 transition-all">Consultar</a>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="reveal bg-dark-800 rounded-2xl overflow-hidden border border-gold-500/10 hover:border-gold-500/40 transition-all grid md:grid-cols-2">
+                <div class="bg-cover bg-center min-h-[300px]" style="background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80');"></div>
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 flex items-center justify-center bg-gold-500/10 rounded-xl mr-4">
+                            <i class="fa-solid fa-music text-gold-500 text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-3xl">Festivales</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Energía pura para festivales al aire libre. Setlists explosivos que conectan con miles de personas en vivo.</p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Set de 45 a 90 minutos</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Banda completa + bailarines</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Coordinación técnica con escenario</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Cumplimiento de rider técnico</li>
+                    </ul>
+                    <a href="contacto.html" class="self-start px-6 py-3 bg-gold-500 text-dark-900 font-bold rounded-full hover:bg-gold-300 transition-all">Consultar</a>
+                </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="reveal bg-dark-800 rounded-2xl overflow-hidden border border-gold-500/10 hover:border-gold-500/40 transition-all grid md:grid-cols-2" style="transition-delay: 0.1s;">
+                <div class="bg-cover bg-center min-h-[300px] md:order-2" style="background-image: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80');"></div>
+                <div class="p-8 md:p-12 flex flex-col justify-center md:order-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 flex items-center justify-center bg-gold-500/10 rounded-xl mr-4">
+                            <i class="fa-solid fa-champagne-glasses text-gold-500 text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-3xl">Fiestas Privadas</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Cumpleaños, aniversarios, despedidas. Shows íntimos o full party, lo que tu celebración necesite.</p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Repertorio a medida (incluye covers)</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Duración flexible (1 a 4 horas)</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Interacción con invitados</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Posibilidad de karaoke</li>
+                    </ul>
+                    <a href="contacto.html" class="self-start px-6 py-3 bg-gold-500 text-dark-900 font-bold rounded-full hover:bg-gold-300 transition-all">Consultar</a>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="reveal bg-dark-800 rounded-2xl overflow-hidden border border-gold-500/10 hover:border-gold-500/40 transition-all grid md:grid-cols-2">
+                <div class="bg-cover bg-center min-h-[300px]" style="background-image: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80');"></div>
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 flex items-center justify-center bg-gold-500/10 rounded-xl mr-4">
+                            <i class="fa-solid fa-tv text-gold-500 text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-3xl">TV & Streaming</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Participaciones en programas de TV, shows en vivo por streaming y performances grabadas para marcas.</p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Canciones en vivo (1 a 4 temas)</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Versiones especiales o tributos</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Producción para redes sociales</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Derechos de imagen negociables</li>
+                    </ul>
+                    <a href="contacto.html" class="self-start px-6 py-3 bg-gold-500 text-dark-900 font-bold rounded-full hover:bg-gold-300 transition-all">Consultar</a>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="reveal bg-dark-800 rounded-2xl overflow-hidden border border-gold-500/10 hover:border-gold-500/40 transition-all grid md:grid-cols-2" style="transition-delay: 0.1s;">
+                <div class="bg-cover bg-center min-h-[300px] md:order-2" style="background-image: url('https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=800&q=80');"></div>
+                <div class="p-8 md:p-12 flex flex-col justify-center md:order-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 flex items-center justify-center bg-gold-500/10 rounded-xl mr-4">
+                            <i class="fa-solid fa-headphones text-gold-500 text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-3xl">Sesiones Acústicas</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Intimidad y conexión pura. Sesiones acústicas en vivo para eventos exclusivos, livings y after office.</p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Formato íntimo (voz + guitarra)</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Ideal para espacios reducidos</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Versiones únicas de hits</li>
+                        <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Ambiente cálido y cercano</li>
+                    </ul>
+                    <a href="contacto.html" class="self-start px-6 py-3 bg-gold-500 text-dark-900 font-bold rounded-full hover:bg-gold-300 transition-all">Consultar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-gold-700 via-gold-500 to-gold-300"></div>
+        <div class="absolute inset-0 bg-dark-900/80"></div>
+        <div class="relative max-w-4xl mx-auto px-4 text-center reveal">
+            <h2 class="font-display font-bold text-4xl md:text-5xl mb-4">¿Tenés un evento en mente?</h2>
+            <p class="text-xl text-gray-300 mb-8">Conversemos y diseñemos juntos el show perfecto.</p>
+            <a href="contacto.html" class="inline-block px-10 py-4 bg-gold-500 text-dark-900 font-bold rounded-full hover:bg-gold-300 transition-all hover:scale-105 shadow-2xl">
+                Pedí tu cotización <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-gold-500/20 pt-16 pb-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa-solid fa-microphone-lines text-gold-500 text-2xl"></i>
+                        <span class="font-display font-bold text-2xl">LUCAS <span class="text-gold-500">VEGA</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">Cantante de pop latino dedicado a crear experiencias musicales únicas.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 rounded-full transition-all"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gold-500 mb-4 uppercase text-sm tracking-wider">Navegación</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-gold-500">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html" class="hover:text-gold-500">Sobre Nosotros</a></li>
+                        <li><a href="servicios.html" class="hover:text-gold-500">Servicios</a></li>
+                        <li><a href="galeria.html" class="hover:text-gold-500">Galería</a></li>
+                        <li><a href="precios.html" class="hover:text-gold-500">Precios</a></li>
+                        <li><a href="contacto.html" class="hover:text-gold-500">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gold-500 mb-4 uppercase text-sm tracking-wider">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="politicas.html" class="hover:text-gold-500">Políticas</a></li>
+                        <li><a href="terminos.html" class="hover:text-gold-500">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 Lucas Vega. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="scroll-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-dark-900 rounded-full shadow-lg opacity-0 pointer-events-none z-40"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>
