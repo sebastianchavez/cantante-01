@@ -7,7 +7,55 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: clip;
+}
+
+/* Keep grid content inside its track, including long form values. */
+.grid > * {
+    min-width: 0;
+}
+
+#menu-btn {
+    flex-shrink: 0;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+#mobile-menu {
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+@media (max-width: 767px) {
+    #navbar > div:first-child > div > a {
+        min-width: 0;
+    }
+
+    #navbar > div:first-child > div > a > span {
+        font-size: clamp(1.125rem, 5vw, 1.5rem);
+        white-space: nowrap;
+    }
+
+    .page-header h1 {
+        font-size: clamp(2.25rem, 8vw, 3rem);
+        line-height: 1.15;
+        overflow-wrap: anywhere;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+}
+
+@media (max-width: 1279px) {
+    /* Sideways reveals extend the page beyond narrow viewports. */
+    .reveal-left:not(.active),
+    .reveal-right:not(.active) {
+        transform: translateY(24px);
+    }
 }
 
 /* Custom Scrollbar */
@@ -151,6 +199,11 @@ body {
     background: linear-gradient(135deg, #D4AF37, #F4C430);
     transform: scale(1.05);
     border: 2px solid #F4C430;
+}
+@media (max-width: 1023px) {
+    .pricing-featured {
+        transform: none;
+    }
 }
 .pricing-featured .text-gray-400 {
     color: rgba(10, 10, 10, 0.7) !important;

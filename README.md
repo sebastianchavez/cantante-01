@@ -65,7 +65,7 @@ cantante-01/
 - 12 fotos de galería (Unsplash)
 - 3 paquetes de precios
 - 5 preguntas frecuentes
-- Mapa de Buenos Aires
+- Mapa de Santiago de Chile
 - Horarios comerciales
 
 ## 🛠️ Personalización Rápida
@@ -106,8 +106,8 @@ Editar `pages/precios.html` y `index.html` (links).
 ## 📧 Contacto Demo
 
 - Email: hola@lucasvega.com
-- Teléfono: +54 11 5555-1234
-- Ubicación: Av. Corrientes 1234, Buenos Aires
+- Teléfono: +56 2 2555 1234
+- Ubicación: Av. Apoquindo 4501, Las Condes, Santiago de Chile
 
 ## 📝 Notas
 
